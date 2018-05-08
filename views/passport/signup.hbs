@@ -1,0 +1,46 @@
+<h2>Signup</h2>
+
+<form action="/signup" method="POST" id="form-container">
+  <label for="username">Username</label>
+  <input id="username" type="text" name="username" placeholder="For your privacy">
+  <br><br>
+  <label for="userFname">First Name</label>
+  <input id="userFname" type="text" name="userFname" placeholder="Your First name">
+  <br><br>
+  <label for="userLname">Last Name</label>
+  <input id="userLname" type="text" name="userLname" placeholder="Your Last Name">
+  <br><br>
+  <label for="birthDate">Birth Date</label>
+  <input id="birthDate" type="date" name="birthDate" placeholder="mm/dd/yyyy">
+  <br><br>
+  <label for="userEmail">Email</label>
+  <input id="userEmail" type="email" name="userEmail" placeholder="Example@domain.com">
+  <br><br>
+  <label for="address1">Address 1</label>
+  <input id="address1" type="text" name="address1" placeholder="...">
+  <br><br>
+  <label for="address2">Address 2</label>
+  <input id="address2" type="text" name="address2" placeholder="Apt, Suit, etc..">
+  <br><br>
+  <label for="city">City</label>
+  <input id="city" type="text" name="city" placeholder="...">
+  <br><br>
+  <label for="state">State</label>
+  <input id="address2" type="text" name="state" placeholder="...">
+  <br><br>
+  <label for="zipcode">Zipcode</label>
+  <input id="zipcode" type="number" name="zipcode" placeholder="...">
+  <br><br>
+  <label for="password">Password</label>
+  <input id="password" type="password" name="password" placeholder="Your password">
+  <br><br>
+  {{#if message}}
+    <div class="error-message">{{ message }}</div>
+  {{/if}}
+  <br><br>
+  <button>Create account</button>
+  <p class="account-message">
+    Do you already have an account?
+    <a href="/login">Login</a>
+  </p>
+</form>
