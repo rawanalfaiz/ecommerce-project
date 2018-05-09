@@ -108,5 +108,7 @@ app.use('/', index);
 const passportRoutes = require("./routes/passport-routes");
 app.use('/', passportRoutes);
 
+const productRouter = require("./routes/products-routes");
+app.use('/', productRouter);
 
 module.exports = app;

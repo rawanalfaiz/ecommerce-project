@@ -1,0 +1,8 @@
+<h2>Products</h2>
+
+    {{#each products}}
+        <a href="/products/{{this._id}}">{{this.productName}}</a>  
+        <a href="/products/{{this._id}}">{{this.productPicture}}</a>      
+    {{/each}}
+
+<a href="/">Go to Home page</a>
