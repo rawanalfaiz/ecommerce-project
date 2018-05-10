@@ -28,12 +28,10 @@ orderRouter.get('/add-new',(req, res, next) => {
 //     res.render("celebrities/new-view")
 // })
 
-ordersRouter.post('/create', (req, res, next) => {
+ordersRouter.post('/user-account', (req, res, next) => {
     // userId: {type: Schema.Types.ObjectId, ref: 'User'}, 
     // productsPerOder: [{type: Schema.Types.ObjectId, ref: 'Product'}],
     // orderDate: Date,
-    // orderTrackingNumber: Number,
-    // orderTotalAmount: Number
 
     const newOrder = new Order({
         userId:req.user_id,

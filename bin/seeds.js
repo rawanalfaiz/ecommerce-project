@@ -108,5 +108,9 @@ Product.create(products)
     .catch(err => {
         console.log(err)
     }) 
-
 //mongoose.disconnect();
+
+
+//Heruko + mlab instruction
+// this is to export a collection from a local BD : mongoexport --db mongodb://localhost/ecommerce-project -c products -o products.json
+// this is to import a collection to  heroku BD : mongoimport -h ds119640.mlab.com:19640 -d heroku_s99mjh8k -c products -u heroku_s99mjh8k -p takohulfocmajocdkqrqq9akga --file products.json
