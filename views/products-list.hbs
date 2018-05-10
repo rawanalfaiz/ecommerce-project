@@ -1,8 +1,24 @@
-<h2>Products</h2>
+<div id="fh5co-product">
+<div class="container">
+    <div class="row">
+        {{#each products}}
+                    <div class="col-md-4 text-center animate-box">
+                    <div class="product">
+                        <div class="product-grid" style="background-image:url({{this.productPicture}});">
+                            <div class="inner">
+                                <p>
+                                    {{!-- <a href="/single-product/{{this._id}}" class="icon"><i class="icon-shopping-cart"></i></a> --}}
+                                    <a href="/single-product/{{this._id}}" class="icon"><i class="icon-eye"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="/single-product/{{this._id}}">{{this.productName}}</a></h3>
+                            <span class="price">${{this.productPrice}}</span>
+                        </div>
+                    </div>
+                </div>
+        {{/each}}
+    </div>
+</div>
 
-    {{#each products}}
-        <a href="/products/{{this._id}}">{{this.productName}}</a>  
-        <a href="/products/{{this._id}}">{{this.productPicture}}</a>      
-    {{/each}}
-
-<a href="/index">Go to Home page</a>

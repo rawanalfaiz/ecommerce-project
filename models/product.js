@@ -6,7 +6,7 @@ const productSchema = new Schema(
   productName: String,
   productBrand: String,
   description: String,
-  peoductPrice: Number,
+  productPrice: Number,
   rating: Number,
   productCtegory: String,
   productSub1Ctegory: String,
@@ -22,7 +22,7 @@ const Product = mongoose.model("Product", productSchema);
 module.exports = Product;
 
 
-// BY CATEGORY
+//CATEGORIES
 // Women//
 // Necklaces & Pendants *
 // Bracelets *
