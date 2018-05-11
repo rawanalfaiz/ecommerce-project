@@ -11,7 +11,7 @@ const userSchema = new Schema(
   userFname: String,
   userLname: String,
   birthDate: Date,
-  userAddress: {//the addresss is not populating in the database*
+  userAddress: {
     address1: String,
     address2: String,
     city: String,

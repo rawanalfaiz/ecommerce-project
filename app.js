@@ -69,10 +69,7 @@ passport.use(new LocalStrategy((username, password, next) => {
   });
 }));
 
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(flash());
-//end of STRATEGY
+
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -98,9 +95,12 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 
-// default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
 
+
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+//end of STRATEGY
 
 
 const index = require('./routes/index');
@@ -111,5 +111,8 @@ app.use('/', passportRoutes);
 
 const productRouter = require("./routes/products-routes");
 app.use('/', productRouter);
+
+const orderRouter = require("./routes/orders-routes");
+app.use('/', orderRouter);
 
 module.exports = app;

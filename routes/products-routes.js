@@ -4,6 +4,7 @@ const Product        = require("../models/product");
 
 /* GET all the products page. */
 productRouter.get('/products-list', (req, res, next) => {
+
     Product.find()
     .then( responseFromDB => {
         res.render('products-list', {products: responseFromDB});//products is a key that can be named anything , however I need to use the same key name on the relater hbs file

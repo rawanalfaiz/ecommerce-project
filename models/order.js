@@ -4,7 +4,7 @@ const Schema   = mongoose.Schema;
 const ordertSchema = new Schema(
 {
   userId: {type: Schema.Types.ObjectId, ref: 'User'}, 
-  productsPerOder: [{type: Schema.Types.ObjectId, ref: 'Product'}],
+  productsPerOder: [{type: Schema.Types.ObjectId, ref: 'Product'}],  
   orderDate: { type: Date, default: Date.now},
   // orderTrackingNumber: Number,
   // orderTotalAmount: Number
