@@ -1,29 +1,29 @@
 <div class="fh5co-loader"></div>
-	<div id="page">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 animate-box">
-				<div class="col-md-6 animate-box">
-					<h3>Log in</h3>
-					<form action="/login" method="POST" id="form-container">
+<div id="page">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1 animate-box">
+			<div class="col-md-6 animate-box">
+				<h3>Log in</h3>
+				<form action="/login" method="POST" id="form-container">
 
-            <div class="row form-group">
-							<div class="col-md-12">
-                <label for="username">Username:</label>                           
-                <input class="form-control" type="text" name="username">
-							</div>
+					<div class="row form-group">
+						<div class="col-md-12">
+							<label for="username">Username:</label>
+							<input class="form-control" type="text" name="username">
 						</div>
+					</div>
 
-            <div class="row form-group">
-							<div class="col-md-12">
-								  <label for="password">Password:</label>
-                  <input id="password" class="form-control" type="password" name="password">
-							</div>
-            </div>
-						  {{#if message}}
-                  <div class="error-message">{{ message }}</div>
-              {{/if}}
-                <button type="submit" class="btn btn-primary btn-outline btn-lg" value="Log In">Log in</button>
-				</form>	
+					<div class="row form-group">
+						<div class="col-md-12">
+							<label for="password">Password:</label>
+							<input id="password" class="form-control" type="password" name="password">
+						</div>
+					</div>
+					{{#if message}}
+					<div class="error-message">{{ message }}</div>
+					{{/if}}
+					<button type="submit" class="btn btn-primary btn-outline btn-lg" value="Log In">Log in</button>
+				</form>
 			</div>
 		</div>
 	</div>

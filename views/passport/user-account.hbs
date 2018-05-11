@@ -1,10 +1,12 @@
-<div>Private page</div>
+<div class="fh5co-loader"></div>
+<div id="page">
+{{!-- <div>Private page</div> --}}
 {{#if user}}
   <div>
-    <h1>Welcom {{user.role}}</h1>
-    <h1><span style="color: red;">{{ user.username}}</span> you are awesome. </h1>
-    <img src="http://media.giphy.com/media/UsK5GqD3e0huU/giphy.gif" alt="You rock.">
-    <a href="/index">Index</a>
+    <h1>Welcom {{user.username}}</h1>
+    {{!-- <h1><span style="color: red;">{{ user.username}}</span> you are awesome. </h1> --}}
+    {{!-- <img src="http://media.giphy.com/media/UsK5GqD3e0huU/giphy.gif" alt="You rock."> --}}
   </div>
 {{/if}}
+</div>
 

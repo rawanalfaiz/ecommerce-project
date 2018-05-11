@@ -114,7 +114,7 @@ router.post("/login", passport.authenticate("local", {
 }));
 
 // PRIVATE USER ACCOUNT
-router.get("/user-account-page", ensureLogin.ensureLoggedIn(), (req, res) => {
+router.get("/user-account", ensureLogin.ensureLoggedIn(), (req, res) => {
   res.render("passport/user-account", { user: req.user });
 });
 //=========================================================================
@@ -125,5 +125,7 @@ router.get("/logout", (req, res) => {
   res.redirect("/login");
 });
 //=========================================================================
+
+
 
 module.exports = router;

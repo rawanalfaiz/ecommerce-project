@@ -1,45 +1,37 @@
-<div class="col-md-5 col-md-push-1 animate-box">
-					
-	<div class="fh5co-contact-info">
-		<h3>Contact Information</h3>
-		<ul>
-			<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-			<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-			<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-			<li class="url"><a href="http://gettemplates.co">gettemplates.co</a></li>
-		</ul>
-	</div>
+<div class="fh5co-loader"></div>
+<div id="page">
+	<div class="col-md-5 col-md-push-1 animate-box">
 
-	<div class="row form-group">
-	<form action="/signup" method="POST" id="form-container">
-		<div class="row form-group">
-			<div class="col-md-6">
-				<label for="fname">First Name</label>
-				<input type="text" id="userFname fname" class="form-control" name="userFname" placeholder="Your first name">
-			</div>
-			<div class="col-md-6">
-				<label for="userLname">Last Name</label>
-				<input type="text" id="userLname lname" class="form-control" name="userLname" placeholder="Your last name">
-			</div>
-		</div>
-			<div class="col-md-12">
-				<label for="subject">Subject</label>
-				<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-			</div>
+		<div class="fh5co-contact-info">
+			<h3>Contact Information</h3>
+			<ul>
+				<li class="address">198 West 21th Street,
+					<br> Suite 721 New York NY 10016</li>
+				<li class="phone">
+					<a href="tel://1234567920">+ 1235 2355 98</a>
+				</li>
+				<li class="email">
+					<a href="mailto:info@yoursite.com">info@yoursite.com</a>
+				</li>
+				<li class="url">
+					<a href="http://gettemplates.co">gettemplates.co</a>
+				</li>
+			</ul>
 		</div>
 
+		<form action="/contact" method="POST" id="form-container">
 		<div class="row form-group">
-			<div class="col-md-12">
-				<label for="message">Message</label>
-				<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-			</div>
+				<div class="col-md-12">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="tell us what you think"></textarea>
+				</div>
 		</div>
 		<div class="form-group">
 			<input type="submit" value="Send Message" class="btn btn-primary">
 		</div>
+		</form>
 
-	</form>		
+	</div>
 
+	<div id="map" class="animate-box" data-animate-effect="fadeIn"></div>
 </div>
-
-<div id="map" class="animate-box" data-animate-effect="fadeIn"></div>

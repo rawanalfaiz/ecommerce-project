@@ -525,13 +525,13 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   list-style: none;
   display: -moz-inline-stack;
-  display: inline-block;
+  /* display: inline-block; */
   zoom: 1;
-  *display: inline;
+  /* *display: inline; */
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
-  display: inline-block;
+  /* display: inline-block; */
   zoom: 1;
   *display: inline;
   color: #d1c286;
